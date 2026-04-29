@@ -1,0 +1,20 @@
+name: Gerar_SkyPlus_IPA
+on: workflow_dispatch
+
+jobs:
+  build:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Instalar_Theos
+        run: |
+          git clone --recursive https://github.com/theos/theos.git ~/theos
+      - name: Compilar_Mod
+        run: |
+          export THEOS=~/theos
+          make package
+      - name: Entregar_Arquivo
+        uses: actions/upload-artifact@v4
+        with:
+          name: SkyPlus-IPA-Pronto
+          path: packages/*.deb
