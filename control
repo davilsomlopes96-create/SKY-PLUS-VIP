@@ -1,0 +1,9 @@
+Package: com.skyplus.vip
+Name: SKY+ VIP MOD
+Depends: mobilesubstrate
+Version: 1.0.0
+Architecture: iphoneos-arm
+Description: Aimbot Real e No Recoil para iOS
+Maintainer: SkyPlus
+Author: SkyPlus
+Section: Tweaks
