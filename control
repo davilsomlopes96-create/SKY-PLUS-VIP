@@ -1,0 +1,9 @@
+Package: com.skyplus.vip
+Name: SkyPlusVIP
+Depends: mobilesubstrate
+Version: 1.0.0
+Architecture: iphoneos-arm
+Description: Mod Menu SkyPlus
+Maintainer: SkyPlus
+Author: SkyPlus
+Section: Tweaks
